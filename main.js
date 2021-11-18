@@ -1,5 +1,5 @@
 function preload() {
-
+clown_nose=loadImage("https://i.postimg.cc/JnKD06rY/Moustach-PNG.png")
 }
 function setup() {
     canvas=createCanvas(300,300);
@@ -34,5 +34,16 @@ function  take_snapshot() {
     save("clown.png");
 }
 
+noseX=0
+noseY=0
+
+    
+        console.log(results);
+        noseX=results[0].pose.nose.x-15;
+        noseY=results[0].pose.nose.y-15;
+        console.log("nose x="+noseX);
+        console.log("nose y="+noseY);
+
+    
 
 
